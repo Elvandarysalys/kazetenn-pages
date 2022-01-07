@@ -16,7 +16,7 @@ class Configuration implements ConfigurationInterface
 {
     public function getConfigTreeBuilder(): TreeBuilder
     {
-        $treeBuilder = new TreeBuilder('kazetenn');
+        $treeBuilder = new TreeBuilder('kazetenn_pages');
         $treeBuilder->getRootNode()
                     ->children()
                         ->scalarNode('blog_url')
