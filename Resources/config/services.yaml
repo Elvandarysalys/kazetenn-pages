@@ -3,8 +3,8 @@ services:
         autowire: true
         autoconfigure: true
 
-    Kazetenn\:
-        resource: '../'
+    Kazetenn\Pages\:
+        resource: '../../'
         exclude:
-            - '../src/DependencyInjection/'
-            - '../src/Tests/'
+            - '../../DependencyInjection/'
+            - '../../Tests/'
