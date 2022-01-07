@@ -36,21 +36,21 @@ class PageContent
 
     /**
      * @var Page|null
-     * @ORM\ManyToOne(targetEntity="Kazetenn\Entity\Page", inversedBy="pageContents")
+     * @ORM\ManyToOne(targetEntity="Kazetenn\Pages\Entity\Page", inversedBy="pageContents")
      * @ORM\JoinColumn(name="page_id", referencedColumnName="id")
      */
     private ?Page $page;
 
     /**
      * @var PageContent|null
-     * @ORM\ManyToOne(targetEntity="Kazetenn\Entity\PageContent", inversedBy="childrens")
+     * @ORM\ManyToOne(targetEntity="Kazetenn\Pages\Entity\PageContent", inversedBy="childrens")
      * @ORM\JoinColumn(name="parent_id", referencedColumnName="id")
      */
     private ?PageContent $parent;
 
     /**
      * @var PageContent[]|null
-     * @ORM\OneToMany(targetEntity="Kazetenn\Entity\PageContent", mappedBy="parent")
+     * @ORM\OneToMany(targetEntity="Kazetenn\Pages\Entity\PageContent", mappedBy="parent")
      * @ORM\JoinColumn(name="children_id", referencedColumnName="id")
      */
     private $childrens;

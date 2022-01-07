@@ -35,13 +35,13 @@ class Page
 
     /**
      * @var Page[]
-     * @ORM\OneToMany(targetEntity="Kazetenn\Entity\Page", mappedBy="parent")
+     * @ORM\OneToMany(targetEntity="Kazetenn\Pages\Entity\Page", mappedBy="parent")
      */
     private $children;
 
     /**
      * @var Page|null
-     * @ORM\ManyToOne(targetEntity="Kazetenn\Entity\Page", inversedBy="children")
+     * @ORM\ManyToOne(targetEntity="Kazetenn\Pages\Entity\Page", inversedBy="children")
      * @ORM\JoinColumn(name="parent_id", referencedColumnName="id", nullable=true)
      */
     private Page $parent;
@@ -60,7 +60,7 @@ class Page
 
     /**
      * @var PageContent[]
-     * @ORM\OneToMany(targetEntity="Kazetenn\Entity\PageContent", mappedBy="page")
+     * @ORM\OneToMany(targetEntity="Kazetenn\Pages\Entity\PageContent", mappedBy="page")
      * @ORM\OrderBy({"blocOrder" = "asc"})
      */
     private $pageContents;
