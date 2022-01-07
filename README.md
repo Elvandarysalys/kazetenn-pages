@@ -28,9 +28,16 @@ The bundle provides a simple data model to handle the programatical creation of 
 
 ### configuration:
 
+To use the routes provided by the bundle, you will have to add the following line to `config/routes.yaml`:
+
+`````yaml
+kazetenn_pages:
+  resource: "@KazetennPages/Resources/config/routes.yaml"
+`````
+
 in `config/packages/kazetenn-pages.yaml`:
 ```yaml
-kazetenn-pages:
+kazetenn_pages:
     blog_url: ""
 ```
 
