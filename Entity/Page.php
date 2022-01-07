@@ -1,4 +1,11 @@
 <?php
+/*
+ * Copyright (c) Gwilherm-Alan Turpin 2022.
+ *
+ * This file is part of the Kazetenn Pages Bundle
+ *
+ * For more informations about the license, you can refer yourself  to the LICENSE file at the root of the project.
+ */
 
 namespace Kazetenn\Pages\Entity;
 
@@ -15,7 +22,7 @@ use Symfony\Component\Uid\UuidV4;
  */
 class Page
 {
-    const PAGE_TEMPLATE = '@Kazetenn/page/_block_content_display.twig';
+    const PAGE_TEMPLATE = '@Kazetenn/page/_block_content_display.twig'; // todo: do something about this
 
     use TimestampableEntity;
 //    use BlameableEntity;
