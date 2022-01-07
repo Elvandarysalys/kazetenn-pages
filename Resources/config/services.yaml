@@ -4,7 +4,7 @@ services:
         autoconfigure: true
 
     Kazetenn\:
-        resource: '../../../src/'
+        resource: '../src/'
         exclude:
             - '../src/DependencyInjection/'
             - '../src/Tests/'

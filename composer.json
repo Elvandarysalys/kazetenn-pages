@@ -1,5 +1,5 @@
 {
-  "name": "elvandar/kazetennpages",
+  "name": "elvandar/kazetenn_pages",
   "type": "symfony-bundle",
   "license": "MIT",
   "description": "A page handling bundle for symfony. Part of the Kazetenn suite",
