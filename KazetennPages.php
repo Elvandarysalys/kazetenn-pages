@@ -1,12 +1,11 @@
 <?php
 
 /*
- * This file is part of the Symfony package.
+ * This file is part of the Kazetenn Pages Bundle
  *
- * (c) Fabien Potencier <fabien@symfony.com>
+ * (c) Gwilherm-Alan Turpin (elvandar.ysalys@protonmail.com) 2022.
  *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
+ * For more informations about the license and copyright, please view the LICENSE file at the root of the project.
  */
 
 namespace Kazetenn\Pages;
