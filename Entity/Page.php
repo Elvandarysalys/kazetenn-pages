@@ -22,7 +22,7 @@ use Symfony\Component\Uid\UuidV4;
  */
 class Page
 {
-    const PAGE_TEMPLATE = '@Kazetenn/page/_block_content_display.twig'; // todo: do something about this
+    const PAGE_TEMPLATE = '@KazetennPages/content/_block_content_display.twig'; // todo: do something about this
 
     use TimestampableEntity;
 //    use BlameableEntity;

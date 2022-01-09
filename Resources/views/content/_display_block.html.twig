@@ -9,7 +9,7 @@
         {% if block.childrens|length >= 1 %}
             <div style="display:flex; flex-direction: {% if block.align == constant('Kazetenn\\Pages\\Entity\\PageContent::HORIZONTAL_ALIGN') %}row{% else %}column{% endif %}; justify-content: space-evenly">
                 {% for child in block.childrensOrdered %}
-                    {{ include('@KazetennPages/page/_display_block.html.twig', {block: child}) }}
+                    {{ include('@KazetennPages/content/_display_block.html.twig', {block: child}) }}
                 {% endfor %}
             </div>
         {% endif %}

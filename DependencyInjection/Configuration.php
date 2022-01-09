@@ -19,7 +19,7 @@ class Configuration implements ConfigurationInterface
         $treeBuilder = new TreeBuilder('kazetenn_pages');
         $treeBuilder->getRootNode()
                     ->children()
-                        ->scalarNode('blog_url')
+                        ->scalarNode('pages_url')
                             ->defaultValue('')
                         ->end()
                     ->end();

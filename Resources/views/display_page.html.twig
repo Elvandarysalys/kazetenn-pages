@@ -2,6 +2,10 @@
 
 {% block title %}{{ page.title }}{% endblock %}
 
+{% block header %}
+    {{ include('@KazetennPages/content/_page_header.html.twig') }}
+{% endblock %}
+
 {% block body %}
     <div id="page_container" class="page_container">
         {% block page_title %}
@@ -11,7 +15,7 @@
         {% endblock %}
 
         {% for order, data in page.pageContentsOrdered %}
-            {{ include('@KazetennPages/page/_display_block.html.twig', {block: data.0}) }}
+            {{ include('@KazetennPages/content/_display_block.html.twig', {block: data.0}) }}
         {% endfor %}
     </div>
 {% endblock %}

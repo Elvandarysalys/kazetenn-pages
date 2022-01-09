@@ -21,7 +21,7 @@ use Symfony\Component\Uid\UuidV4;
  */
 class PageContent
 {
-    const ROW_TEMPLATE     = '@Kazetenn/page/_block_content_display.twig';
+    const ROW_TEMPLATE     = '@KazetennPages/content/_block_content_display.twig';
     const HORIZONTAL_ALIGN = 'horizontal';
     const VERTICAL_ALIGN   = 'vertical';
 
