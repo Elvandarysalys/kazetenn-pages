@@ -29,7 +29,7 @@ class KazetennPagesExtension extends Extension
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);
 
-        $container->setParameter('kazetenn_pages.page_url', $config['page_url']);
+        $container->setParameter('kazetenn_pages.pages_url', $config['pages_url']);
 
         $this->addAnnotatedClassesToCompile([
             '**\\Controller\\',
