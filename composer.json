@@ -93,7 +93,11 @@
   "extra": {
     "symfony": {
       "docker": true,
-      "allow-contrib": true
+      "allow-contrib": true,
+      "endpoint": [
+        "https://api.github.com/repos/Elvandarysalys/recipes/contents/index.json",
+        "flex://defaults"
+      ]
     }
   }
 }
