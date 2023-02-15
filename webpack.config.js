@@ -22,7 +22,7 @@ Encore
   .enableSassLoader()
 
   /* entries */
-  .addStyleEntry('page_style', '/Resources/assets/stylesheet/page.scss')
+  .addStyleEntry('page_style', '/assets/stylesheet/page.scss')
 
   .cleanupOutputBeforeBuild()
   .enableBuildNotifications()
